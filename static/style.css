@@ -1,10 +1,12 @@
 *{
-    margin: 0;
+    margin: auto;
     padding: 0;
     font-family: sans-serif;
+
 }
 body{
     background-color: lavender;
+
 }
 .navbar{
     display: flex;
@@ -90,8 +92,8 @@ body{
 }
 
 .body-container{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bin1.jpeg");
-    height: 20rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/img1.jpg");
+    height: 25rem;
     display: flex;
     color: white    ;
 
@@ -103,11 +105,11 @@ body{
 }
     .card{
         background-color: #f29620;
-        width: 15rem;
-        height: 15rem;
+        width: 14rem;
+        height: 18rem;
         margin: 0 auto;
-        margin-top: 12rem;
-        margin-right: 4rem;
+        margin-top: 4rem;
+        margin-right: 2rem;
         margin-bottom: 5rem; /* Add margin to the bottom */
         border-radius: 1rem;
         box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -119,10 +121,10 @@ body{
 
     .card-2{
         background-color:#257830;
-        width: 15rem;
-        height: 15rem;
+        width: 14rem;
+        height: 18rem;
         margin: 0 auto;
-        margin-top: 12rem; /* Add margin to the top */
+        margin-top: 4rem; /* Add margin to the top */
         margin-right: 5rem;
         border-radius: 1rem;
         box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -159,7 +161,7 @@ body{
     }
 
     .contuct{
-        margin: 3rem 0 5rem 0;
+        margin: 3rem 2 5rem 0;
     }
 
     /* .images{
@@ -168,16 +170,16 @@ body{
     .images img{
         /* position: relative; */
         padding:5px ;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
+        border-radius: 70%;
+        width: 200px;
+        height: 200px;
         float: left;
-        margin-right: 5px;
+        margin-right: 100px;
     }
 
     #phone {
-        position: relative;
-        top: 1px;
+        position: static;
+        top: 9px;
         right: 0px;
         left:-45px;
     }

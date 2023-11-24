@@ -6,14 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
     <!-- nav beggins here -->
 
     <div class="navbar">
         <div class="navbar-left">
-            <img src="static/images1/img1.jpg" alt="logo">
+            <img src="{%static 'images/logo.png'%}" alt="logo" height ="700px" width="700px">
         </div>
         <div class="navbar-center">
             <ul>
@@ -56,20 +56,18 @@
 
         </div>
     </div>
-    <div class="contuct">
+
         <div class="images">
-            <img src="./images/happy-afro.jpg">
-            <img src="./images/phone-call.png" alt="" id="phone">
+            <img src="{%static 'images/img1.jpg'%}"height ="50px" width="50px">
+            <img src="{%static 'images/img2.jpg'%}" alt="" id="phone">
             <p id="contuct-paragraph">Reliable and trusted services to meet all your waste requirements,<br> feel free to request a free quote today!!</p>
-            <p><span>Contuct us</span></p>
         </div>
         <hr id="line">
-    </div>
 
     <div class="get-intouch">
         <h3>Providing Trusted, Competitive And Reliable Business<br> Waste Collection On A Scheduled Time Or Call In Service.</h3>
         <div class="get-intouch-det">
-            <img src="./images/happy-afro.jpg" alt="" height ="250px" width="250px">
+            <img src="{%static 'images/img3.jpg'%}" alt="" height ="250px" width="250px">
             <p>
                 We have already made huge strides in our sustainability journey by<br> investing in plastic recycling and energy from waste infrastructure<br> and low carbon collections, leading to a huge reduction in nation’s<br> carbon smoke.<br><br>
 

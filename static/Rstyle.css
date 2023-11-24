@@ -1,6 +1,12 @@
- *body {
+ body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            background-color: lavender;
+
+            background-image: url('static/images/img1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         form {
