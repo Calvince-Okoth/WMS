@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <!-- nav beggins here -->
+
+    <div class="navbar">
+        <div class="navbar-left">
+            <img src="static/images1/img1.jpg" alt="logo">
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="company.html">company</a></li>
+                <li><a href="services.html">services</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <button onclick="function1()" class="btn" id="pickup-btn"><a href="{%url 'request'%}">Request pickup</a></button>
+        </div>
+        <div class="navbar-left">
+            <button onclick="function2()" class="btn" id="sign-btn"><a href="{%url 'sign'%}">SignUp/SignIn</a></button>
+        </div>
+    </div>
+    <!-- nav ends here -->
+
+
+    <!-- body section starts -->
+    <div class="body-container">
+        <div class="description">
+            <h1>A wide range of services from home and all business!</h1>
+            <p> We work work with you to deliver your dumbsster properly<br>
+                when you need it and create proper custom pick up<br> scedule
+                that make sense.
+            </p> 
+        </div>
+
+        <div class="card">
+
+            <h2>Trusted 97% Satisfaction</h2>
+            <p>We understand that we must lead by example and are commited to further improving health.</p>
+
+        </div>
+    
+        <div class="card-2">
+
+            <h2>Sastainable Management</h2>
+            <p>Almost 6000 employees to carry out all essential operations daily to support our economy.</p>
+
+        </div>
+    </div>
+    <div class="contuct">
+        <div class="images">
+            <img src="./images/happy-afro.jpg">
+            <img src="./images/phone-call.png" alt="" id="phone">
+            <p id="contuct-paragraph">Reliable and trusted services to meet all your waste requirements,<br> feel free to request a free quote today!!</p>
+            <p><span>Contuct us</span></p>
+        </div>
+        <hr id="line">
+    </div>
+
+    <div class="get-intouch">
+        <h3>Providing Trusted, Competitive And Reliable Business<br> Waste Collection On A Scheduled Time Or Call In Service.</h3>
+        <div class="get-intouch-det">
+            <img src="./images/happy-afro.jpg" alt="" height ="250px" width="250px">
+            <p>
+                We have already made huge strides in our sustainability journey by<br> investing in plastic recycling and energy from waste infrastructure<br> and low carbon collections, leading to a huge reduction in nation’s<br> carbon smoke.<br><br>
+
+                We already made huge strides in our sustainability journey by<br> investing in recycling, offering low cost commercial waste<br> collection services to meet all your waste.
+            </p>
+            
+        </div>
+    </div>
+
+    <div class="devoted-garbage-collectors"></div>
+
+            <!-- footer section starts -->
+ <footer id="primary-footer">
+    <!-- footer widget start -->
+    <div class="container">
+        <div class="row">
+            <div class="footer-item">
+                <div class="footer-heading">
+                    <h4>About Us</h4>
+                </div>
+                <p>We are a company that provides a wide range of services for homes and businesses.<br> 
+                    Our mission is to provide high-quality services while minimizing our impact on the environment.
+                </p>
+                <div class="footer-social-icon">
+                                <div class="social-title">Follow us:</div>
+                                <a href="#"><i class="fab fa-facebook-f circle-icon"></i></a>
+                                <a href="#"><i class="fab fa-instagram circle-icon"></i></a>
+                                <a href="#"><i class="fab fa-twitter circle-icon"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in circle-icon"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-item">
+                <div class="footer-heading">
+                    <h4>Contact Us:</h4>
+                </div>
+                      <ul class="linkediting">
+                          <li><a href="#">Free Bootstrap 4 Templates</a></li>
+                          <li><a href="#">Bootstrap Footer Templates</a></li>
+                        <li><a href="#">Bootstrap Portfolio Themes</a></li>
+                        <li><a href="#">Bootstrap Hero</a></li>
+                        <li><a href="#">Bootstrap 4 Tutorial</a></li>
+                      </ul>
+                </div>
+
+            <div class="footer-item">
+                <div class="footer-heading">
+                    <h4>Quick Links</h4>
+                </div>
+                <ul class="linkediting">
+                        <li><a href="#"><i class="fa fa-angle-right"></i> About Us</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Contact Us</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> My Portfolio</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Testimonials</a></li>
+                      </ul>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+   
+    <!-- footer credit end -->
+</footer> 
+<script src="{% static 'main.js' %}"></script>
+</body>
+</html>
