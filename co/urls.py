@@ -22,11 +22,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='index'),
     path('Request/', views.request, name='request'),
-    path('sign/', views.sign, name='sign'
-                                   ''),
-
-
-
+    path('sign/', views.sign, name='sign')
 
 
 ]
+
