@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/static/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...",
+        crossorigin="anonymous" />
+    <script src="{% static 'main.js' %}"></script>
 </head>
 <body>
     <!-- nav beggins here -->
@@ -17,16 +20,19 @@
         </div>
         <div class="navbar-center">
             <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="company.html">company</a></li>
-                <li><a href="services.html">services</a></li>
+                <li><a href="{%url 'index'%}">Home</a></li>
+                <li><a href="{%url 'services'%}">Company</a></li>
+                <li><a href="{%url 'services'%}">services</a></li>
             </ul>
         </div>
-        <div class="navbar-right">
+        {% if  user.is_authenticated %}
+        	<div class="navbar-right">
             <button onclick="function1()" class="btn" id="pickup-btn"><a href="{%url 'request'%}">Request pickup</a></button>
         </div>
+        {% endif %}
+
         <div class="navbar-left">
-            <button onclick="function2()" class="btn" id="sign-btn"><a href="{%url 'sign'%}">SignUp/SignIn</a></button>
+            <button onclick="function2()" class="btn" id="sign-btn"><a href="{%url 'signup'%}">SignUp/SignIn</a></button>
         </div>
     </div>
     <!-- nav ends here -->
@@ -39,7 +45,7 @@
             <p> We work work with you to deliver your dumbsster properly<br>
                 when you need it and create proper custom pick up<br> scedule
                 that make sense.
-            </p> 
+            </p>
         </div>
 
         <div class="card">
@@ -48,7 +54,7 @@
             <p>We understand that we must lead by example and are commited to further improving health.</p>
 
         </div>
-    
+
         <div class="card-2">
 
             <h2>Sastainable Management</h2>
@@ -73,7 +79,7 @@
 
                 We already made huge strides in our sustainability journey by<br> investing in recycling, offering low cost commercial waste<br> collection services to meet all your waste.
             </p>
-            
+
         </div>
     </div>
 
@@ -88,7 +94,7 @@
                 <div class="footer-heading">
                     <h4>About Us</h4>
                 </div>
-                <p>We are a company that provides a wide range of services for homes and businesses.<br> 
+                <p>We are a company that provides a wide range of services for homes and businesses.<br>
                     Our mission is to provide high-quality services while minimizing our impact on the environment.
                 </p>
                 <div class="footer-social-icon">
@@ -129,9 +135,23 @@
     </div>
 
     </div>
-   
+
     <!-- footer credit end -->
-</footer> 
-<script src="{% static 'main.js' %}"></script>
+</footer>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Smooth scroll for anchor links
+        document.querySelectorAll('ul.linkediting a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    });
+</script>
+
 </body>
 </html>

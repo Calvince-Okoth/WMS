@@ -11,39 +11,41 @@
 
     <h2>Waste Pickup Request Form</h2>
 
-    <form action="/submit-pickup-request" method="post">
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
         <!-- Basic Information -->
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required>
-
-        <!-- Pickup Details -->
-        <label for="wasteType">Type of Waste:</label>
-        <select id="wasteType" name="wasteType" required>
-            <option value="organic">Organic Waste</option>
-            <option value="recyclable">Recyclable Waste</option>
-            <option value="hazardous">Hazardous Waste</option>
-            <option value="other">Other</option>
-        </select>
-
-        <label for="pickupLocation">Pickup Location:</label>
-        <textarea id="pickupLocation" name="pickupLocation" rows="4" required></textarea>
-
-        <label for="preferredDate">Preferred Pickup Date:</label>
-        <input type="date" id="preferredDate" name="preferredDate" required>
-
-        <!-- Additional Options -->
-        <label>Additional Options:</label>
-        <input type="checkbox" id="urgent" name="urgent">
-        <label for="urgent">Urgent Pickup</label>
-
-        <input type="checkbox" id="recurrence" name="recurrence">
-        <label for="recurrence">Recurrence (Regular Pickup)</label>
+{#        <label for="name">Full Name:</label>#}
+{#        <input type="text" id="name" name="name" required>#}
+{##}
+{#        <label for="email">Email:</label>#}
+{#        <input type="email" id="email" name="email" required>#}
+{##}
+{#        <label for="phone">Phone Number:</label>#}
+{#        <input type="tel" id="phone" name="phone" required>#}
+{##}
+{#        <!-- Pickup Details -->#}
+{#        <label for="wasteType">Type of Waste:</label>#}
+{#        <select id="wasteType" name="wasteType" required>#}
+{#            <option value="organic">Organic Waste</option>#}
+{#            <option value="recyclable">Recyclable Waste</option>#}
+{#            <option value="hazardous">Hazardous Waste</option>#}
+{#            <option value="other">Other</option>#}
+{#        </select>#}
+{##}
+{#        <label for="pickupLocation">Pickup Location:</label>#}
+{#        <textarea id="pickupLocation" name="pickupLocation" rows="4" required></textarea>#}
+{##}
+{#        <label for="preferredDate">Preferred Pickup Date:</label>#}
+{#        <input type="date" id="preferredDate" name="preferredDate" required>#}
+{##}
+{#        <!-- Additional Options -->#}
+{#        <label>Additional Options:</label>#}
+{#        <input type="checkbox" id="urgent" name="urgent">#}
+{#        <label for="urgent">Urgent Pickup</label>#}
+{##}
+{#        <input type="checkbox" id="recurrence" name="recurrence">#}
+{#        <label for="recurrence">Recurrence (Regular Pickup)</label>#}
 
         <!-- Submit Button -->
         <button type="submit">Submit Request</button>

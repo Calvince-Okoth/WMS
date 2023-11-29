@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'co'
+    'WMS'
 ]
 
 MIDDLEWARE = [
@@ -71,6 +71,8 @@ TEMPLATES = [
         },
     },
 ]
+signin_REDIRECT_URL = "Request/"
+
 
 WSGI_APPLICATION = 'co.wsgi.application'
 
